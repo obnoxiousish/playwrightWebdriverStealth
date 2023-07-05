@@ -10,11 +10,6 @@ Takes a playwright page object and adds a init JS script to hide the webdriver A
 
         browser = playwright.chromium.launch(
             channel='chrome',
-            proxy={
-                'server': f'http://{self.hostname}:{self.port}',
-                'username': self.username,
-                'password': self.password,
-            },
             headless=False
         )
 
